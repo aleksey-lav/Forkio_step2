@@ -4,22 +4,26 @@
   height: 100px;
   position: relative;
   &__content {
-    width: 100%;
+    // width: 100%;
     max-width: 100vw;
     min-width: 993px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    // flex-direction: row;
     line-height: 100px;
-    margin: 0 auto;
+    // margin: 0 auto;
     padding: 0 10px 0 10px;
     box-sizing: border-box;
   }
+
   &__logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-decoration: none;
     width: 12.8%;
+    // padding-left: 90px;
+
     .logo__logo-img {
       //display: flex;
     //  align-items: center;
