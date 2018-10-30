@@ -1,0 +1,73 @@
+.about-us {
+  width: 100%;
+  background: url("../img/about-us.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: -100px;
+  // height: 100vh;
+  box-sizing: border-box;
+  &__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+  }
+}
+.about-us__title {
+  color: #ffffff;
+  font-size: 82px;
+  font-weight: 700;
+  margin-top: 130px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-us__slogan {
+  font-family: 'Lato', sans-serif;
+  color: #8d81ac;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+
+}
+
+.about-us__small-info {
+  color: #848e97;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.b-download-btn {
+  margin-top: 34%;
+  margin-right: auto;
+  margin-left: auto;
+  transform: translateY(60px);
+    // text-align: center;
+    // width: 100%;
+    // min-width: 320px;
+}
+.btn_download {
+  border-radius: 36px;
+  padding: 20px 60px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 21.01px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.b-download-btn__info {
+  color: #848e97;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10%;
+  text-align: center;
+}

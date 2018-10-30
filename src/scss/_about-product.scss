@@ -1,0 +1,86 @@
+.about-product {
+  width: 100%;
+}
+.about-product__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  width: 909px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 129px;
+}
+
+.section-title__heading {
+  color: #635c73;
+  font-size: 54.01px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 38px;
+  text-transform: uppercase;
+}
+
+.section-title__description {
+  font-family: 'Lato', sans-serif;
+  color: #323232;
+  font-size: 21.01px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.github-Links {
+  display: flex;
+  flex-direction: row;
+  margin: 36px 0 70px 0;
+}
+
+.github-links__item {
+  margin: 0 10px 0 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.github-links__action {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3px 10px;
+  font-size: 12px;
+  color: #24292e;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 0.25em 0 0 0.25em;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+}
+
+.github-links__icon {
+  display: flex;
+  text-align: center;
+  margin-right: 3px;
+}
+
+.github-links__count {
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #24292e;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-left: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-decoration: none;
+}
