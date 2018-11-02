@@ -1,6 +1,7 @@
 .about-product {
   width: 100%;
 }
+
 .about-product__content {
   max-width: 1200px;
   margin: 0 auto;
@@ -13,29 +14,33 @@
 }
 
 .section-title {
-  width: 909px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 129px;
+
+  &__heading {
+    color: #635c73;
+    font-size: 3.38rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 38px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-family: 'Lato', sans-serif;
+    color: #323232;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.18;
+    text-align: center;
+    //width: 100vw;
+  }
 }
 
-.section-title__heading {
-  color: #635c73;
-  font-size: 54.01px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 38px;
-  text-transform: uppercase;
-}
 
-.section-title__description {
-  font-family: 'Lato', sans-serif;
-  color: #323232;
-  font-size: 21.01px;
-  font-weight: 400;
-  text-align: center;
-}
+
 
 .github-Links {
   display: flex;
@@ -83,4 +88,42 @@
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   text-decoration: none;
+}
+
+//MEDIA
+@media (max-width: 992px) {
+  .section-title__heading{
+    font-size: 2.63rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .section-title__description{
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .section-title__heading{
+    font-size: 1.63rem;
+      }
+  .section-title__description{
+    font-size: 0.88rem;
+  }
+  .github-Links{
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1.25;
+  }
+
+  .github-links__item:nth-of-type(2){
+    margin-right: 0;
+  }
+  .github-links__item:last-child{
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
 }
