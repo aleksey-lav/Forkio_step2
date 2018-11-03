@@ -68,7 +68,7 @@ gulp.task('copy-css', ['minify-css'], () => {
 // tasks for JS files
 
 gulp.task('clean-js', ()=> {
-    return gulp.src('./src/js/script.js', {read: false})
+    return gulp.src('./dist/js/script.js', {read: false})
         .pipe(clean());
 });
 
@@ -102,7 +102,7 @@ gulp.task('minify-img',()=>{
 })
 
 
-gulp.task('serve', ['copy-html','copy-css','copy-js','minify-img'], () => {
+gulp.task('serve', ['copy-html','copy-css','copy-js','minify-img', 'copy-plugins'], () => {
     browserSync.init({
         server: {
             baseDir: "./dist"
