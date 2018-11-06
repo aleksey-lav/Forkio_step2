@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Forkio</title>
 </head>
@@ -41,6 +43,25 @@
                     </ul>
                     <a href="#" class="btn btn_violet header__btn">Buy now</a>
                     <div class="header__burger-menu" id="burgerMenuBtn"></div>
+                  <div class="header__navbar-collapse nav-content" id="navbarNavDropdown">
+                    <ul class="navbar__content__body navbar-nav mr-0 ml-auto">
+                    <li class="nav-item">
+                        <a class="navbar__link nav-link" href="#">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar__link nav-link" href="#">About fork</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar__link nav-link" href="#">Buying options</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar__link nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="navbar__content__button navbar__content__button--desktop rounded-button rounded-button--strong">Buy now</button>
+                    </li>
+                </ul>
+            </div>
                 </div>
             </div>
         </div>
@@ -114,7 +135,7 @@
             <div class="features-list">
                 <div class="feature-item">
                     <div class="feature-item__icon-block">
-                        <img class="feature-item__img " alt="Feature code" src="dist/img/features-icons/icon.png">
+                        <img class="feature-item__img " alt="Feature code" src="img/features/hereis-icon-1.png">
                     </div>
                     <div class="feature-item__about-block">
                         <h3 class="feature-item__title">Creatred to Make The Web Better</h3>
@@ -124,7 +145,7 @@
                 </div>
                 <div class="feature-item">
                     <div class="feature-item__icon-block">
-                        <img class="feature-item__img" src="dist/img/features-icons/icon-1.png">
+                        <img class="feature-item__img" src="img/features/hereis-icon-2.png">
                     </div>
                     <div class="feature-item__about-block">
                         <h3 class="feature-item__title">Incredibly Powerful Tool</h3>
@@ -134,7 +155,7 @@
                 </div>
                 <div class="feature-item">
                     <div class="feature-item__icon-block">
-                        <img class="feature-item__img" src="dist/img/features-icons/icon-2.png">
+                        <img class="feature-item__img" src="img/features/hereis-icon-3.png">
                     </div>
                     <div class="feature-item__about-block">
                         <h3 class="feature-item__title">Experimental Stuff</h3>
@@ -144,7 +165,7 @@
                 </div>
                 <div class="feature-item">
                     <div class="feature-item__icon-block">
-                        <img class="feature-item__img" src="dist/img/features-icons/icon-3.png">
+                        <img class="feature-item__img" src="img/features/hereis-icon-4.png">
                     </div>
                     <div class="feature-item__about-block">
                         <h3 class="feature-item__title">Creatred to Make The Web Better</h3>
@@ -153,7 +174,7 @@
                 </div>
             </div>
             <div class="features__img-block">
-                <img src="dist/img/features-icons/feature.png" alt="">
+                <img src="img/features/hereis-editor-screen.png" alt="">
             </div>
         </div>
         <!--</div>-->
@@ -165,8 +186,34 @@
                 <div class="carousel__list">
                     <div class="carousel-item">
                         <div class="carousel-item__author">
-                            <div class="carousel-item__img"></div>
-                            <p class="carousel-item__name">Steven Strange</p>
+                            <div class="carousel-item__img">
+                                <img src="img/features/userpic.png" alt="userpic">
+                            </div>
+                            <p class="carousel-item__name">Steven Strange 1</p>
+                            <p class="carousel-item__nick">@DoctorS</p>
+                        </div>
+                        <p class="carousel-item__comment">
+                            <span class="carousel-item__comment_violet">@Pixelbuddha</span> Suspendisse sodales sem est, in scelerisque felis. Suspendisse sodales sem est, in scelerisque felis. Suspendisse sodales sem est, in scelerisque felis.</p>
+                        <p class="carousel-item__time-post">2 hours ago</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item__author">
+                            <div class="carousel-item__img">
+                                <img src="img/features/userpic.png" alt="userpic">
+                            </div>
+                            <p class="carousel-item__name">Steven Strange 2</p>
+                            <p class="carousel-item__nick">@DoctorS</p>
+                        </div>
+                        <p class="carousel-item__comment">
+                            <span class="carousel-item__comment_violet">@Pixelbuddha</span> Suspendisse sodales sem est, in scelerisque felis. Suspendisse sodales sem est, in scelerisque felis. Suspendisse sodales sem est, in scelerisque felis.</p>
+                        <p class="carousel-item__time-post">2 hours ago</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item__author">
+                            <div class="carousel-item__img">
+                                <img src="img/features/userpic.png" alt="userpic">
+                            </div>
+                            <p class="carousel-item__name">Steven Strange 3</p>
                             <p class="carousel-item__nick">@DoctorS</p>
                         </div>
                         <p class="carousel-item__comment">
@@ -351,7 +398,8 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="dist/js/script.js"></script>
+    <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

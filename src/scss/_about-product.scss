@@ -90,40 +90,36 @@
   text-decoration: none;
 }
 
-//MEDIA
+//////media
 @media (max-width: 992px) {
-  .section-title__heading{
+  .section-title__heading {
     font-size: 2.63rem;
   }
-
 }
 
 @media (max-width: 480px) {
-  .section-title__description{
+  .section-title__description {
     font-size: 1rem;
   }
-
 }
 
 @media (max-width: 400px) {
-  .section-title__heading{
+  .section-title__heading {
     font-size: 1.63rem;
-      }
-  .section-title__description{
+  }
+  .section-title__description {
     font-size: 0.88rem;
   }
-  .github-Links{
+  .github-links {
     flex-wrap: wrap;
     justify-content: center;
     line-height: 1.25;
   }
-
-  .github-links__item:nth-of-type(2){
+  .github-links__item:nth-of-type(2) {
     margin-right: 0;
   }
-  .github-links__item:last-child{
+  .github-links__item:last-child {
     margin-top: 20px;
     margin-right: 0;
   }
-
 }
