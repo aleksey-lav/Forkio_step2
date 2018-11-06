@@ -127,6 +127,7 @@
 //
 @media (max-width: 992px) {
   .header {
+    position: relative;
     height: 118px;
     &__content {
       display: flex;
@@ -142,13 +143,21 @@
       margin-left: 0;
       max-width: 100%;
       min-width: 100px;
+
       justify-content: center;
       flex: 1 0 100%;
       order: 2;
       width: 517px;
     }
     &__btn{
-      margin-left: 50px
+      right: 20px;
+      top: 24px;
+      position: absolute;
+
+    }
+    &__logo{
+      margin-left: 20px;
+      
     }
   }
 
@@ -159,5 +168,6 @@
     margin-right: 0;
     justify-content: space-between;
     max-width: 96vw;
+    padding-bottom: 22px
   }
 }

@@ -74,6 +74,22 @@
 }
 ///media
 @media (max-width: 992px) {
+  .about-us__title{
+    font-size: 60px;
+  }
+  .about-us__slogan{
+    font-size: 20px;
+    // text-transform: capitalize;
+  }
+  .about-us__small-info{
+    padding-bottom: 120px;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #848e97;
+    text-transform: uppercase;
+    text-align: center;
+  }
   .section-title__heading {
     font-size: 2.63rem;
   }

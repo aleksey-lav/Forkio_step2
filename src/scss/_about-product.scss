@@ -93,7 +93,11 @@
 //////media
 @media (max-width: 992px) {
   .section-title__heading {
+    text-align: center;
     font-size: 2.63rem;
+  }
+  .section-title__description{
+    margin: 0 auto;
   }
 }
 
