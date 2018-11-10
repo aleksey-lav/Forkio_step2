@@ -1,10 +1,10 @@
 .about-us {
-  width: 100%;
   background: url("../img/about-us.jpg") no-repeat center;
-  background-size: cover;
-  margin-top: -100px;
-  // height: 100vh;
   box-sizing: border-box;
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
   &__content {
     max-width: 1200px;
     margin: 0 auto;
@@ -18,7 +18,7 @@
   color: #ffffff;
   font-size: 82px;
   font-weight: 700;
-  margin-top: 130px;
+  margin-top: 60px;
   text-align: center;
   margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
@@ -29,7 +29,7 @@
   color: #8d81ac;
   font-size: 30px;
   font-weight: 400;
-  line-height: 15px;
+  line-height: 21px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 25px;
@@ -46,13 +46,11 @@
 }
 
 .b-download-btn {
-  margin-top: 34%;
-  margin-right: auto;
-  margin-left: auto;
-  transform: translateY(60px);
-    // text-align: center;
-    // width: 100%;
-    // min-width: 320px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 .btn_download {
   border-radius: 36px;
@@ -62,7 +60,7 @@
   font-size: 21.01px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 15px;
+
 }
 
 .b-download-btn__info {
@@ -71,6 +69,10 @@
   font-weight: 400;
   margin-top: 10%;
   text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }
 ///media
 @media (max-width: 992px) {
@@ -99,25 +101,51 @@
   .section-title__description {
     font-size: 1rem;
   }
+  .about-us__title{
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 400px) {
   .section-title__heading {
     font-size: 1.63rem;
+    line-height: 1.2;
   }
   .section-title__description {
     font-size: 0.88rem;
+    line-height: 1.3;
   }
   .github-links {
     flex-wrap: wrap;
     justify-content: center;
+    animation-delay: center;
     line-height: 1.25;
+    display: flex;
+    margin-top: 35px;
   }
   .github-links__item:nth-of-type(2) {
     margin-right: 0;
   }
   .github-links__item:last-child {
-    margin-top: 20px;
+    margin-top: 0;
     margin-right: 0;
+  }
+  .btn_download{
+    padding: 10px 10px;
+    font-size: 18.01px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 15px;/* Приближение из-за подстановки шрифтов */
+    text-align: center
+  }
+  .about-us__slogan{
+      line-height: 1.3;
+  }
+  .about-us__small-info{
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center
+  }
+  .about-us__title{
+    margin-top: 50px;
   }
 }

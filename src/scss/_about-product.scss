@@ -38,14 +38,11 @@
     //width: 100vw;
   }
 }
-
-
-
-
-.github-Links {
+.github-links{
   display: flex;
-  flex-direction: row;
-  margin: 36px 0 70px 0;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 70px;
 }
 
 .github-links__item {

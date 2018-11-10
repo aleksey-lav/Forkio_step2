@@ -19,14 +19,16 @@
     <header class="header">
         <div class="container">
             <div class="header__content">
-                <a href="#" class="logo header__logo">
+                <div class="header__logo-images">
+                  <a href="#" class="logo header__logo">
                     <div class="logo__logo-img">
-                      <img src="img/Logo.png" alt="">
+                      <img class="plain-img" src="img/Logo.png" alt="">
+                      <img class="hover-img" src="img/Logo-hover.png" alt="">
                     </div>
                     <h2 class="logo__text">Forkio</h2>
                 </a>
+              </div>
                 <div class="header__flex-wrapper">
-
                     <ul class="menu">
                         <li class="menu__item">
                             <a href="#" class="menu__link">Overview</a>
@@ -41,27 +43,22 @@
                             <a href="#" class="menu__link">Support</a>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn_violet header__btn">Buy Now</a>
-                    <div class="header__burger-menu" id="burgerMenuBtn"></div>
-                  <div class="header__navbar-collapse nav-content" id="navbarNavDropdown">
-                    <ul class="navbar__content__body navbar-nav mr-0 ml-auto">
-                    <li class="nav-item">
-                        <a class="navbar__link nav-link" href="#">Overview</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar__link nav-link" href="#">About fork</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar__link nav-link" href="#">Buying options</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar__link nav-link" href="#">Support</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="navbar__content__button navbar__content__button--desktop rounded-button rounded-button--strong">Buy now</button>
-                    </li>
-                </ul>
-            </div>
+                </div>
+                <div class="header__last-btn"><a href="#" class="btn btn_violet header__btn">Buy Now</a></div>
+                <div class="header__burger-menu">
+                  <input type="checkbox" id="burgerMenuBtn">
+                  <label for="burgerMenuBtn"></label>
+                  <div class="burger-line first-line"></div>
+                  <div class="burger-line second-line"></div>
+                  <div class="burger-line third-line"></div>
+                  <div class="burger-line fourth-line"></div>
+                  <nav class="main-menu">
+                      <a class="menu_link_mobile" href="">Home</a>
+                      <a class="menu_link_mobile" href="">Overview</a>
+                      <a class="menu_link_mobile" href="">About Fork</a>
+                      <a class="menu_link_mobile" href="">Buying Options</a>
+                      <a class="menu_link_mobile" href="">Support</a>
+                  </nav>
                 </div>
             </div>
         </div>
@@ -77,7 +74,6 @@
                     <a href="#" class="btn btn_violet btn_download">Download For Free Now</a>
                     <p class="b-download-btn__info">Unlimited 30-Days Trial Period</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -91,7 +87,7 @@
                       laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
               </div>
 
-              <ul class="github-Links">
+              <ul class="github-links">
                   <li class="github-links__item">
                       <a href="https://github.com/aleksey-lav/Forkio_step2/subscription" class="github-links__action">
                           <span class="github-links__icon icon-eye"><svg class="octicon octicon-eye v-align-text-bottom"
